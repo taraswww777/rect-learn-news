@@ -1,0 +1,39 @@
+@import "../../scss/include";
+
+.app {
+	@include grid-base();
+
+	text-align: center;
+
+	&__header {
+
+	}
+	&__logo {
+		@include xy-cell(2);
+	}
+	&__logo-img {
+		animation: App-logo-spin infinite 20s linear;
+		max-width: 100%;
+	}
+	&__title {
+		@include xy-cell(9);
+	}
+
+	&__main {
+
+	}
+	&__footer {
+
+	}
+
+}
+
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,9 @@
+@mixin grid-base() {
+	&__container {
+		@include xy-grid-container();
+	}
+
+	&__row {
+		@include xy-grid();
+	}
+}
