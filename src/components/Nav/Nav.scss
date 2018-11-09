@@ -1,0 +1,19 @@
+@import "../../scss/include";
+
+$blockName: 'nav';
+
+.#{$blockName} {
+	@include xy-grid();
+	list-style: none;
+	&__item {
+
+	}
+	&__link {
+		@include button();
+
+		text-decoration: none;
+		padding: 5px 10px;
+		margin-right: 5px;
+		margin-bottom: 0;
+	}
+}

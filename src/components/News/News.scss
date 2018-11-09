@@ -1,0 +1,8 @@
+@import "../../scss/include";
+
+$blockName: 'news';
+
+.#{$blockName} {
+	@include grid-base();
+
+}

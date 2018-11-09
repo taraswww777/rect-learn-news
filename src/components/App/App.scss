@@ -1,6 +1,9 @@
 @import "../../scss/include";
 
-.app {
+$blockName: 'app';
+
+.#{$blockName} {
+
 	@include grid-base();
 
 	text-align: center;
@@ -27,7 +30,6 @@
 	}
 
 }
-
 
 @keyframes App-logo-spin {
 	from {
