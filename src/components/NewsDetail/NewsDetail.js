@@ -5,7 +5,7 @@ class NewsDetail extends Component {
 	render() {
 		return (
 			<div className="news-detail">
-				NewsDetail
+				{this.props.news._id}
 			</div>
 		);
 	}

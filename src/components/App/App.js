@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import logo from '../../logo.svg';
 import './App.scss';
 import Nav from "../Nav/Nav";
+import {connect} from "react-redux";
+import {mapStateToProps} from "../../reducers/Reducers";
+import AppDispatch from "./AppDispatch";
 
 class App extends Component {
 	render() {
@@ -38,4 +41,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default connect(mapStateToProps, AppDispatch)(App);
